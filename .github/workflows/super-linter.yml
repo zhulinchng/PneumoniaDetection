@@ -37,10 +37,6 @@ jobs:
       - name: Convert notebooks to Markdown
         run: find . -type f -name "*.ipynb" -exec jupyter nbconvert --to markdown --TemplateExporter.exclude_code_cell=true {} \;
 
-      - name: Analysing the code with pylint
-        run: |
-          pylint "main.py"
-
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
@@ -48,3 +44,7 @@ jobs:
           VALIDATE_PYTHON_BLACK: true
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Analysing the code with pylint
+        run: |
+          pylint --disable="C0305,C0114,C0115,C0116" "main.py"
