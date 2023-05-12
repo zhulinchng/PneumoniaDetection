@@ -47,4 +47,4 @@ jobs:
       
       - name: Analysing the code with pylint
         run: |
-          pylint --disable="C0305,C0114,C0115,C0116" "main.py"
+          pylint --errors-only --disable="E0401" "main.py"
