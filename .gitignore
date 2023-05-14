@@ -1,6 +1,8 @@
 # ignore dataset to save space in github
 data/
 archive.zip
+*.h5
+logs/
 
 # vscode settings
 .vscode
