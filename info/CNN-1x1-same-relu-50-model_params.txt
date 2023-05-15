@@ -1,0 +1,41 @@
+Model: "CNN-1x1-same-relu-50"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d_3 (Conv2D)           (None, 256, 256, 32)      320       
+                                                                 
+ batch_normalization_3 (Batc  (None, 256, 256, 32)     128       
+ hNormalization)                                                 
+                                                                 
+ max_pooling2d_3 (MaxPooling  (None, 128, 128, 32)     0         
+ 2D)                                                             
+                                                                 
+ conv2d_4 (Conv2D)           (None, 128, 128, 64)      18496     
+                                                                 
+ batch_normalization_4 (Batc  (None, 128, 128, 64)     256       
+ hNormalization)                                                 
+                                                                 
+ max_pooling2d_4 (MaxPooling  (None, 64, 64, 64)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_5 (Conv2D)           (None, 64, 64, 128)       73856     
+                                                                 
+ batch_normalization_5 (Batc  (None, 64, 64, 128)      512       
+ hNormalization)                                                 
+                                                                 
+ max_pooling2d_5 (MaxPooling  (None, 32, 32, 128)      0         
+ 2D)                                                             
+                                                                 
+ flatten_1 (Flatten)         (None, 131072)            0         
+                                                                 
+ dense_2 (Dense)             (None, 512)               67109376  
+                                                                 
+ dropout_1 (Dropout)         (None, 512)               0         
+                                                                 
+ dense_3 (Dense)             (None, 1)                 513       
+                                                                 
+=================================================================
+Total params: 67,203,457
+Trainable params: 67,203,009
+Non-trainable params: 448
+_________________________________________________________________
