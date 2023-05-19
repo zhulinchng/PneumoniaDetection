@@ -8,3 +8,4 @@ Versions:
 - PneumoniaCNN_draft_512: <https://tensorboard.dev/experiment/dj9eAJuNRT6Fl5xgv5lJSg/>
 - Complete version: <https://tensorboard.dev/experiment/I454yNCwRWO3dqvLmvS1Lg/>
 - Complete version 2: <https://tensorboard.dev/experiment/odpngKZnTKeawZSKNDLGrg/#hparams>
+- Final version: <https://tensorboard.dev/experiment/QUb9j5ovQvG2n79YNywONw/>
